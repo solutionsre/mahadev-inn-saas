@@ -109,3 +109,20 @@ npx prisma migrate reset
 npx prisma generate
 npm run seed
 ```
+
+### 📈 Business Advantages
+
+- Hotels → Centralized booking & occupancy tracking across branches.
+- Chain Owners → Clear visibility across all locations.
+- SaaS Provider → One codebase, unlimited tenants.
+- Scalable Pricing → per tenant, per branch, or per booking.
+
+### 🛡️ Core Features Checklist
+
+✅ Multi-tenant architecture (hotel isolation)
+✅ Branch isolation (data restricted by JWT)
+✅ Role-based permissions (Owner/Manager/Viewer)
+✅ Auto BookingNo generation
+✅ Occupancy dashboard & calendar
+✅ PDF/Excel exports
+✅ Seeded demo users (owner/manager/viewer)
