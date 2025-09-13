@@ -86,5 +86,38 @@ A **multi-tenant, multi-branch SaaS booking platform** built with:
 ## 4️⃣ Consistency (Master Prompt to Lock Scope)
 
 ⚠️ To **regenerate or extend** this system without drifting, always reuse this **master prompt**:
+```
+We are building a Hotel SaaS Booking System (multi-tenant, multi-branch).
+Each hotel = Tenant, each Tenant has multiple Branches (Kathmandu-1, Pokhara, etc.).
+Users = Owner, Manager, Viewer.
+
+Owner → can see all branches of their tenant, can CRUD everything, can edit inventory.
+Manager → can CRUD only their branch.
+Viewer → can only view their branch.
+
+Core requirements (never change):
+
+Bookings stored branch-wise, enforced by server via JWT.
+
+BookingNo = BranchName-YYYYMMDDHHMMSS-UID.
+
+Each booking has bookingstat (default Confirmed).
+
+After new booking → downloadable PDF confirmation.
+
+Occupancy calculated daily = rooms booked / branch capacity.
+
+Owner can see occupancy of all branches combined.
+
+Branch capacity stored in RoomInventory (single,double,triple,quard).
+
+Prisma schema, API, and Frontend must stay aligned.
+
+Client = Next.js + Tailwind; Server = NestJS + Prisma.
+
+Provide full repo layout (server, client, prisma, seed, main modules).
+
+Never change this logic unless explicitly told. Always regenerate full aligned codebase (schema + server + frontend) with these core features intact.
+```
 
 
