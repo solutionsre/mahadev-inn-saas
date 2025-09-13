@@ -68,9 +68,7 @@ mahadev-inn-saas/
 ├─ 📊 (dashboard)/page.tsx # Dashboard: bookings + new entry
 ├─ 🗓️ (dashboard)/calendar/ # Calendar occupancy view
 └─ 🛏️ (dashboard)/inventory # RoomInventory editor
-
-
----
+```
 
 ## 🚀 Getting Started
 
