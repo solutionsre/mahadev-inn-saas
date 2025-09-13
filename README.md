@@ -50,7 +50,7 @@ A **multi-tenant, multi-branch SaaS booking platform** built with:
 
 ## 📂 Repo Structure
 
-- mahadev-inn-saas/
+mahadev-inn-saas/
 ├─ server/ # NestJS API + Prisma
 │ ├─ prisma/schema.prisma # Core DB models (Tenant, Branch, User, Booking, RoomInventory)
 │ ├─ prisma/seed.ts # Seeds demo tenant, branches, users
