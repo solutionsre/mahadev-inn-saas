@@ -68,3 +68,14 @@ mahadev-inn-saas/
 ├─ 📊 (dashboard)/page.tsx # Dashboard: bookings + new entry
 ├─ 🗓️ (dashboard)/calendar/ # Calendar occupancy view
 └─ 🛏️ (dashboard)/inventory # RoomInventory editor
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone repo & install
+```bash
+git clone https://github.com/your-org/mahadev-inn-saas.git
+cd mahadev-inn-saas
+
