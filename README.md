@@ -71,12 +71,6 @@ mahadev-inn-saas/
 ```
 
 ## 🚀 Getting Started
-
-### 1. Clone repo & install
-```bash
-git clone https://github.com/your-org/mahadev-inn-saas.git
-cd mahadev-inn-saas
-```
 ## Diagram Plan (textual first):
 ```
    ┌───────────────────────────┐
@@ -104,4 +98,14 @@ cd mahadev-inn-saas
 │ - Agent        │        │ - Status          │
 │ - CheckIn/Out  │        │ - Occupancy calc  │
 └────────────────┘        └───────────────────┘
+```
+
+### 1. Clone repo & install
+```bash
+git clone https://github.com/your-org/mahadev-inn-saas.git
+cd mahadev-inn-saas
+cd server # Running inside the Server Folder 
+npx prisma migrate reset
+npx prisma generate
+npm run seed
 ```
