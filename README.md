@@ -51,20 +51,20 @@ A **multi-tenant, multi-branch SaaS booking platform** built with:
 ## 📂 Repo Structure
 
 mahadev-inn-saas/
-├─ server/ # NestJS API + Prisma
-│ ├─ prisma/schema.prisma # Core DB models (Tenant, Branch, User, Booking, RoomInventory)
-│ ├─ prisma/seed.ts # Seeds demo tenant, branches, users
-│ └─ src/
-│ ├─ auth/ # JWT Auth + Guards
-│ ├─ users/ # User management
-│ ├─ bookings/ # Booking APIs + Occupancy logic
-│ ├─ inventory/ # Room capacity mgmt (Owner only)
-│ └─ prisma/prisma.service.ts
-└─ client/ # Next.js + Tailwind frontend
-├─ src/lib/api.ts # Axios wrapper with JWT
-├─ src/lib/auth.tsx # Auth context provider
-└─ src/app/
-├─ login/page.tsx # Login page
-├─ (dashboard)/page.tsx # Dashboard: bookings + new entry
-├─ (dashboard)/calendar/ # Calendar occupancy view
-└─ (dashboard)/inventory # RoomInventory editor
+├─ 📦 server/ # NestJS API + Prisma
+│ ├─ 📄 prisma/schema.prisma # Core DB models
+│ ├─ 🌱 prisma/seed.ts # Seeds demo data
+│ └─ 📂 src/
+│ ├─ 🔑 auth/ # JWT Auth + Guards
+│ ├─ 👥 users/ # User management
+│ ├─ 🏨 bookings/ # Booking APIs + Occupancy logic
+│ ├─ 📊 inventory/ # Room capacity mgmt (Owner only)
+│ └─ ⚙️ prisma/prisma.service.ts
+└─ 💻 client/ # Next.js + Tailwind frontend
+├─ 🔌 src/lib/api.ts # Axios wrapper with JWT
+├─ 🔐 src/lib/auth.tsx # Auth context provider
+└─ 📂 src/app/
+├─ 🔑 login/page.tsx # Login page
+├─ 📊 (dashboard)/page.tsx # Dashboard: bookings + new entry
+├─ 🗓️ (dashboard)/calendar/ # Calendar occupancy view
+└─ 🛏️ (dashboard)/inventory # RoomInventory editor
