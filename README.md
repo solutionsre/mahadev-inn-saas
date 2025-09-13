@@ -77,3 +77,31 @@ mahadev-inn-saas/
 git clone https://github.com/your-org/mahadev-inn-saas.git
 cd mahadev-inn-saas
 
+## Diagram Plan (textual first):
+```
+   ┌───────────────────────────┐
+   │         Tenant            │
+   │     (Hotel Group)         │
+   └─────────────┬─────────────┘
+                 │
+   ┌─────────────┴─────────────┐
+   │                           │
+┌──▼───────┐              ┌────▼───────┐
+│ Branch 1 │              │ Branch 2   │   ...
+│ Kathmandu │              │ Pokhara    │
+└───┬──────┘              └─────┬──────┘
+    │                            │
+ ┌──▼───────────┐          ┌─────▼──────────┐
+ │ Users        │          │ Users          │
+ │ - Owner      │          │ - Manager      │
+ │ - Manager    │          │ - Viewer       │
+ │ - Viewer     │          │                │
+ └──┬───────────┘          └─────┬──────────┘
+     │                            │
+┌────▼───────────┐        ┌───────▼───────────┐
+│ Bookings       │        │ Bookings          │
+│ - BookingNo    │        │ - BookingNo       │
+│ - Agent        │        │ - Status          │
+│ - CheckIn/Out  │        │ - Occupancy calc  │
+└────────────────┘        └───────────────────┘
+```
