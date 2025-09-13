@@ -38,3 +38,33 @@ A **multi-tenant, multi-branch SaaS booking platform** built with:
 
 ### 📊 Occupancy
 * Calculated **per day per branch**:
+- occupancy% = (rooms booked / branch capacity) * 100
+* Branch capacity stored in `RoomInventory` (single, double, triple, quard).  
+* Owners see **aggregate occupancy** across all branches.  
+
+### 📄 PDF / Excel
+* After each booking → **downloadable PDF confirmation**.  
+* Calendar & Dashboard support **monthly and daily exports** (PDF + Excel).  
+
+---
+
+## 📂 Repo Structure
+
+mahadev-inn-saas/
+├─ server/ # NestJS API + Prisma
+│ ├─ prisma/schema.prisma # Core DB models (Tenant, Branch, User, Booking, RoomInventory)
+│ ├─ prisma/seed.ts # Seeds demo tenant, branches, users
+│ └─ src/
+│ ├─ auth/ # JWT Auth + Guards
+│ ├─ users/ # User management
+│ ├─ bookings/ # Booking APIs + Occupancy logic
+│ ├─ inventory/ # Room capacity mgmt (Owner only)
+│ └─ prisma/prisma.service.ts
+└─ client/ # Next.js + Tailwind frontend
+├─ src/lib/api.ts # Axios wrapper with JWT
+├─ src/lib/auth.tsx # Auth context provider
+└─ src/app/
+├─ login/page.tsx # Login page
+├─ (dashboard)/page.tsx # Dashboard: bookings + new entry
+├─ (dashboard)/calendar/ # Calendar occupancy view
+└─ (dashboard)/inventory # RoomInventory editor
