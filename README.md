@@ -119,10 +119,10 @@ npm run seed
 
 ### 🛡️ Core Features Checklist
 
-✅ Multi-tenant architecture (hotel isolation)
-✅ Branch isolation (data restricted by JWT)
-✅ Role-based permissions (Owner/Manager/Viewer)
-✅ Auto BookingNo generation
-✅ Occupancy dashboard & calendar
-✅ PDF/Excel exports
-✅ Seeded demo users (owner/manager/viewer)
+- ✅ Multi-tenant architecture (hotel isolation)
+- ✅ Branch isolation (data restricted by JWT)
+- ✅ Role-based permissions (Owner/Manager/Viewer)
+- ✅ Auto BookingNo generation
+- ✅ Occupancy dashboard & calendar
+- ✅ PDF/Excel exports
+- ✅ Seeded demo users (owner/manager/viewer)
